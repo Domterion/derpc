@@ -2,7 +2,7 @@
 
 ![Rust](https://img.shields.io/badge/rust-stable-brightgreen.svg)
 
-A rotating Discord Rich Presence configured with TOML
+> A rotating Discord Rich Presence configured with TOML
 
 - **Easy** to configure
 - **Highly** configurable
