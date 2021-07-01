@@ -29,6 +29,8 @@ jobs:
           path: |
             derpc
             config.example.toml
+            README.md
+            LICENSE
 
   macos:
     name: MacOS
@@ -56,6 +58,8 @@ jobs:
           path: |
             derpc
             config.example.toml
+            README.md
+            LICENSE
 
   windows:
     name: Windows
@@ -83,3 +87,5 @@ jobs:
           path: |
             derpc.exe
             config.example.toml
+            README.md
+            LICENSE
