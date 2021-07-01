@@ -1,7 +1,14 @@
 mod config;
 mod constants;
 
-use std::{thread, time::Duration};
+use std::{
+    sync::{
+        atomic::{AtomicBool, Ordering},
+        Arc,
+    },
+    thread,
+    time::Duration,
+};
 
 use discord_rich_presence::{
     activity::{Activity, Assets, Button},
@@ -9,13 +16,28 @@ use discord_rich_presence::{
 };
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    println!("{:?}", constants::CONFIG.configuration);
+    println!(
+        "Starting on client ID {}",
+        constants::CONFIG.configuration.client_id
+    );
     let mut client = new_client(&constants::CONFIG.configuration.client_id)?;
 
     client.connect()?;
 
-    loop {
+    let running = Arc::new(AtomicBool::new(true));
+    let r = running.clone();
+
+    ctrlc::set_handler(move || {
+        println!("Exiting the RPC....");
+        r.store(false, Ordering::Relaxed);
+    })?;
+
+    'outer: loop {
         for (i, (k, v)) in constants::CONFIG.statuses.iter().enumerate() {
+            if !running.load(Ordering::Relaxed) {
+                break 'outer;
+            }
+
             println!(
                 "({:?}/{:?}) Currently on {:?}",
                 i + 1,
