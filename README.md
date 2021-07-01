@@ -11,6 +11,7 @@
 ### Using
 
 To use you will need Rust and Git on your system.
+_or download the release_
 
 ```bash
 # Clone the repo
