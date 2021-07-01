@@ -29,4 +29,4 @@ $ ./target/release/derpc
 
 ### Configuration
 
-A guide to the config can be found in `config.example.toml` then rename the config to `config.toml`
+A guide to the config can be found in `config.example.toml` then rename the config to `config.toml`. Make sure you read this and fill out the values.

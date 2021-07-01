@@ -1,10 +1,13 @@
+# The config for DeRPC
+# * is required
+
 [configuration]
-# Your applications client ID
+# *Your applications client ID
 client_id = ""
-# The time between changing your RPC in seconds
+# *The time between changing your RPC in seconds
 time_between = 15
 
-# All the statuses you may want
+# *All the statuses you may want
 [statuses]
   # An example status with only a state and details
   [statuses.website]
