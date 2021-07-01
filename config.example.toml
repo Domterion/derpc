@@ -1,0 +1,27 @@
+[configuration]
+# Your applications client ID
+client_id = ""
+# The time between changing your RPC in seconds
+time_between = 15
+
+# All the statuses you may want
+[statuses]
+  # An example status with only a state and details
+  [statuses.website]
+  # The second line in your RPC
+  state = "https://domm.me"
+  # The first line in your RPC
+  details = "My website"
+
+  # Another example with a join my discord button
+  # Any RPC may only have two buttons
+  # If you have a `large_image` you must also have a `small_image` 
+  # The `large_image` and `small_image` must be in your RPCs art assets 
+  [statuses.discord]
+  state = "Join my discord"
+  details = "click the button below!"
+  large_image = "discord"
+  small_image = "meow"
+    [[statuses.discord.buttons]]
+    label = "Discord"
+    url = "https://discord.gg/mMsy23j"
