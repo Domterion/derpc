@@ -23,10 +23,10 @@ $ cd derpc
 # Build derpc for release
 $ cargo build --release
 
-# Run derpc
+# Run derpc, you must have a `config.toml` in this directory
 $ ./target/release/derpc
 ```
 
 ### Configuration
 
-A guide to the config can be found in `config.example.toml`
+A guide to the config can be found in `config.example.toml` then rename the config to `config.toml`
