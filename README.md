@@ -1,7 +1,6 @@
 # DeRPC
 
 ![Rust](https://img.shields.io/badge/rust-stable-brightgreen.svg)
-![Discord](https://img.shields.io/discord/640675047714848770.svg)
 
 > A rotating Discord Rich Presence configured with TOML
 
