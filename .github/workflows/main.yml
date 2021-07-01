@@ -12,6 +12,7 @@ jobs:
 
   linux:
     name: Linux
+    needs: ci
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -41,6 +42,7 @@ jobs:
 
   macos:
     name: MacOS
+    needs: ci
     runs-on: macos-latest
     steps:
       - name: Checkout
@@ -70,6 +72,7 @@ jobs:
 
   windows:
     name: Windows
+    needs: ci
     runs-on: windows-latest
     steps:
       - name: Checkout
