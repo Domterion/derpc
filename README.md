@@ -10,8 +10,9 @@
 
 ### Using
 
+Building:
+
 To use you will need Rust and Git on your system.
-_or download the release_
 
 ```bash
 # Clone the repo
@@ -23,9 +24,16 @@ $ cd derpc
 # Build derpc for release
 $ cargo build --release
 
+# Fill out the config and move it
+$ mv config.example.toml config.toml
+
 # Run derpc, you must have a `config.toml` in this directory
 $ ./target/release/derpc
 ```
+
+Prebuilt:
+
+Click the `Actions` tab then click the latest action. Download the respective zip and unzip it. Follow the configuration section below then run the `derpc` executable.
 
 ### Configuration
 
