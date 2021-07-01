@@ -23,5 +23,7 @@ time_between = 15
   large_image = "discord"
   small_image = "meow"
     [[statuses.discord.buttons]]
+    # The label of the button
     label = "Discord"
+    # The url the button should go to
     url = "https://discord.gg/mMsy23j"

@@ -7,16 +7,16 @@ A rotating Discord Rich Presence configured with TOML
 To use you will need Rust and Git on your system.
 
 ```
-# clone the repo
+# Clone the repo
 $ git clone https://github.com/Domterion/derpc
 
-# cd into the cloned repo
+# Cd into the cloned repo
 $ cd derpc
 
-# build derpc for release
+# Build derpc for release
 $ cargo build --release
 
-# run derpc
+# Run derpc
 $ ./target/release/derpc
 ```
 
