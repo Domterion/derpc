@@ -21,7 +21,6 @@ jobs:
         run: |
           cargo build --release
           cp target/release/derpc .
-          cp config.example.toml .
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
@@ -29,6 +28,7 @@ jobs:
           name: derpc-linux
           path: |
             derpc
+            config.example.toml
 
   macos:
     name: MacOS
@@ -48,7 +48,6 @@ jobs:
         run: |
           cargo build --release
           cp target/release/derpc .
-          cp config.example.toml .
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
@@ -56,6 +55,7 @@ jobs:
           name: derpc-macos
           path: |
             derpc
+            config.example.toml
 
   windows:
     name: Windows
@@ -75,7 +75,6 @@ jobs:
         run: |
           cargo build --release
           cp target/release/derpc.exe .
-          cp config.example.toml .
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
@@ -83,3 +82,4 @@ jobs:
           name: derpc-windows
           path: |
             derpc.exe
+            config.example.toml
