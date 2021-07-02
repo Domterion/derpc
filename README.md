@@ -1,6 +1,10 @@
-# DeRPC
-
-![Rust](https://img.shields.io/badge/rust-stable-brightgreen.svg)
+<div align="center">
+  <h1>DeRPC</h1>
+  <a href="https://rust-lang.org"><img src="https://img.shields.io/badge/rust-stable-brightgreen.svg" /></a>
+  <a href="https://github.com/Domterion/derpc/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" /></a>
+  <a href="https://discord.gg/mMsy23j"><img src="https://img.shields.io/discord/640675047714848770.svg"/></a>
+  <br />
+</div>
 
 > A rotating Discord Rich Presence configured with TOML
 
