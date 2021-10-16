@@ -1,7 +1,6 @@
 <div align="center">
   <h1>DeRPC</h1>
   <p>A rotating Discord Rich Presence configured with TOML</p>
-  <a href='https://ko-fi.com/W7W5YYNM' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
   <br>
   <a href="https://rust-lang.org"><img src="https://img.shields.io/badge/rust-stable-brightgreen.svg" /></a>
   <a href="https://github.com/Domterion/derpc/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" /></a>
