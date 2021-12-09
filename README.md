@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>DeRPC</h1>
-  <p>A rotating Discord Rich Presence configured with TOML</p>
+  <h1>💅 DeRPC</h1>
+  A rotating Discord Rich Presence configured with TOML
   <br>
   <a href="https://rust-lang.org"><img src="https://img.shields.io/badge/rust-stable-brightgreen.svg" /></a>
   <a href="https://github.com/Domterion/derpc/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" /></a>
@@ -12,7 +12,7 @@
 - **Highly** configurable
 - **Rotating** presences
 
-### Using
+# Using
 
 Building:
 
@@ -39,6 +39,9 @@ Prebuilt:
 
 Click the `Actions` tab then click the latest action. Download the respective zip and unzip it. Follow the configuration section below then run the `derpc` executable.
 
-### Configuration
+# Configuration
 
 A guide to the config can be found in `config.example.toml` then rename the config to `config.toml`. Make sure you read this and fill out the values.
+
+# License
+MIT
